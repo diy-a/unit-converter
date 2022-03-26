@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="main-title">
+            <div class="flex">
+
+                <div class="converter-title">
+                    <h1>Metric / Imperial Unit Converter</h1>
+                    <input type="number" value=0 id="input" onchange="calculate()">
+                </div>
+
+                <div class="calculation-container">
+                    <div class="results">
+                        <p class="header">Length (Meter/Feet)</p>
+                        <p>
+                            <span id="val1">0</span> meters = <span id="feet">0.000</span> feet | 
+                            <span id="val2">0</span> feet = <span id="meters">0.000</span> meters
+                        </2>
+                    </div>
+                    <div class="results">
+                        <p class="header">Volume (Liters/Galons)</p>
+                        <p>
+                            <span id="val3">0</span> liters = <span id="galons">0.000</span> galons | 
+                            <span id="val4">0</span> galons = <span id="liters">0.000</span> liters
+                        </2>
+                    </div>
+                    <div class="results">
+                        <p class="header">Mass (Kilograms/Pounds)</p>
+                        <p>
+                            <span id="val5">0</span> kg = <span id="pounds">0.000</span> pounds | 
+                            <span id="val6">0</span> pounds = <span id="kg">0.000</span> kg
+                        </2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+    REQUIREMENTS!!
+    - Save number to a variable in code
+    - When app loads, do calculations and display the results
+    - Round numbers to 3 decimal places
+    - CSS gradient generator
+    - BONUS: Add an input for the user to change the number and automatically recalculate values when it changes
+-->
